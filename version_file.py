@@ -7,6 +7,7 @@ libraries = [
     "langchain",
     "langchain_google_genai",
     "langchain_community",
+    "tiktoken",
 ]
 
 # Open the requirements.txt file in write mode
