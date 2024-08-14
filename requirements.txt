@@ -8,3 +8,4 @@ youtube-transcript-api==0.6.2
 pytube==15.0.0
 urllib3>=1.26.16
 unstructured
+nltk
