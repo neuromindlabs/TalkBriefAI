@@ -4,22 +4,28 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.chains.summarize import load_summarize_chain
 from langchain_community.document_loaders import YoutubeLoader, UnstructuredURLLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.llms import openai
 import tiktoken  # Importing the tiktoken library
 from langchain.chains import LLMChain
 
+# from langchain.llms import openai
 
-import nltk
 
-nltk.download("punkt")
-# Download the NLTK data to the current directory
-nltk.download(
-    "averaged_perceptron_tagger_eng",
-    download_dir=".",
-)
+# import nltk
 
-# Add the current directory to NLTK's data search paths
-nltk.data.path.append(".")
+# nltk.download("punkt")
+# # Download the NLTK data to the current directory
+# nltk.download(
+#     "averaged_perceptron_tagger_eng",
+#     download_dir=".",
+# )
+
+# # Add the current directory to NLTK's data search paths
+# nltk.data.path.append(".")
+
+
+from langchain.document_loaders import WebBaseLoader, PyPDFLoader
+import requests
+from urllib.parse import urlparse
 
 
 # from langchain import RunnableSequence
@@ -169,13 +175,26 @@ if generic_url:
                     )
 
                 else:
-                    loader = UnstructuredURLLoader(
-                        urls=[generic_url],
-                        ssl_verify=False,
-                        headers={
-                            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_5_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
-                        },
-                    )
+
+                    # loader = UnstructuredURLLoader(
+                    #     urls=[generic_url],
+                    #     ssl_verify=False,
+                    #     headers={
+                    #         "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_5_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+                    #     },
+                    # )
+                    response = requests.head(generic_url, allow_redirects=True)
+                    content_type = response.headers.get("Content-Type", "").lower()
+
+                    if "application/pdf" in content_type:
+                        print("PDF detected. Using PyPDFLoader...")
+                        loader = PyPDFLoader(generic_url)
+                        # documents = pdf_loader.load()
+                    else:
+                        print("Web page detected. Using WebBaseLoader...")
+                        loader = WebBaseLoader(generic_url)
+                        # documents = web_loader.load()
+
                 docs = loader.load()
 
                 # Calculate token count
