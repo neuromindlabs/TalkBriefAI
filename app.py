@@ -8,9 +8,20 @@ from langchain.llms import openai
 import tiktoken  # Importing the tiktoken library
 from langchain.chains import LLMChain
 
-# import nltk
 
-# nltk.download("punkt")
+import nltk
+
+nltk.download("punkt")
+# Download the NLTK data to the current directory
+nltk.download(
+    "averaged_perceptron_tagger_eng",
+    download_dir=".",
+)
+
+# Add the current directory to NLTK's data search paths
+nltk.data.path.append(".")
+
+
 # from langchain import RunnableSequence
 from langchain.prompts import PromptTemplate
 
