@@ -10,3 +10,4 @@ urllib3>=1.26.16
 unstructured
 nltk
 unstructured[pdf]
+pypdf
