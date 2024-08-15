@@ -14,7 +14,7 @@ from langchain.prompts import PromptTemplate
 
 ## Streamlit APP
 st.set_page_config(page_title="Talk-Brief AI", page_icon="👴")
-st.title("👴 Talk-Brief AI: Interact with YT or Website")
+st.title("👴 Talk-Brief AI: Get your Brief text Summarized!! ")
 st.subheader("Get an Overview of URL")
 
 ## Get the google_api_key and url(YT or website) to be summarized
@@ -216,14 +216,14 @@ if st.button("Get an overview of the Content from YT or Website"):
                         generic_url, add_video_info=True
                     )
 
-                else:
-                    loader = UnstructuredURLLoader(
-                        urls=[generic_url],
-                        ssl_verify=False,
-                        headers={
-                            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_5_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
-                        },
-                    )
+                # else:
+                #     loader = UnstructuredURLLoader(
+                #         urls=[generic_url],
+                #         ssl_verify=False,
+                #         headers={
+                #             "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_5_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+                #         },
+                #     )
 
                 # docs = loader.load()
                 try:
