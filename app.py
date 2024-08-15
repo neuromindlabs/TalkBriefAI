@@ -14,7 +14,7 @@ from langchain.prompts import PromptTemplate
 
 ## Streamlit APP
 st.set_page_config(page_title="Talk-Brief AI", page_icon="👴")
-st.title("👴 Talk-Brief AI: Interact with YT or Website")
+st.title("👴 Talk-Brief AI: Get your Brief text Summarized!! ")
 st.subheader("Get an Overview of URL")
 
 ## Get the google_api_key and url(YT or website) to be summarized
