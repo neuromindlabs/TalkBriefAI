@@ -1,4 +1,7 @@
-# 🚀 [Talk-Brief AI: Interact with YouTube or Website](https://talkbriefai.streamlit.app/)
+# 🚀 Talk-Brief AI: Interact with YouTube or Website
+<div align="center">
+<h2>https://talkbriefai.streamlit.app/ </h2>
+</div>
 
 Welcome to the **Talk-Brief AI** repository! This project leverages LangChain and Google's gemini-1.5-flash LLM to provide users with concise overviews of content from YouTube videos or websites. The application is built using Streamlit, making it easy to deploy as a web app for summarizing lengthy or complex online content.
 <div align="center">
@@ -6,7 +9,7 @@ Welcome to the **Talk-Brief AI** repository! This project leverages LangChain an
 </div>
 
 ## 🔗 Project Deployment
-The project is currently hosted with the help of Streamlit. You can access the live version of the application through this [link](https://talkbriefai.streamlit.app/).
+The project is currently hosted with the help of Streamlit. You can access the live version of the application through this link: https://talkbriefai.streamlit.app/.
 
 
 ## 📚 Table of Contents
@@ -68,7 +71,7 @@ The project is currently hosted with the help of Streamlit. You can access the l
 - **Map-Reduce**: Breaks down large texts into smaller chunks, summarizes them individually, and then combines them into a cohesive summary.
 - **Refine**: Iteratively refines the summary, ensuring that key details are not lost, even in lengthy documents.
 
-## 🖼️ Example - 3/3.ADD GIF
+## 🖼️ Example 
 <div align="center">
   <img src="Screenshot 2024-08-17 at 8.02.18 PM.png" alt="Project Image" width="1000">
 </div>
