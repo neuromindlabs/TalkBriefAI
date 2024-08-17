@@ -69,8 +69,12 @@ The project is currently hosted with the help of Streamlit. You can access the l
 - **Refine**: Iteratively refines the summary, ensuring that key details are not lost, even in lengthy documents.
 
 ## 🖼️ Example - 3/3.ADD GIF
-
-![Talk-Brief AI Interface](https://your-image-link.com)
+<div align="center">
+  <img src="Screenshot 2024-08-17 at 8.02.18 PM.png" alt="Project Image" width="1000">
+</div>
+<div align="center">
+  <img src="Screenshot 2024-08-17 at 8.02.35 PM.png" alt="Project Image" width="1000">
+</div>
 
 ## 📜 License
 
