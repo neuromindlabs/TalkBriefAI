@@ -6,6 +6,14 @@
 Welcome to the **Talk-Brief AI** repository! This project leverages LangChain and Google's gemini-1.5-flash LLM to provide users with concise overviews of content from YouTube videos or websites. The application is built using Streamlit, making it easy to deploy as a web app for summarizing lengthy or complex online content.
 <div align="center">
   <img src="talk_brief_ai_summarize_youtube_videos_and_websites_with_ease.jpeg" alt="Project Image" width="500">
+
+<br>
+  <p>
+  <img src="https://img.shields.io/badge/Python-black?logo=python&logoSize=auto&labelColor=%23f7f7f7&color=%233776AB&link=https%3A%2F%2Fwww.python.org%2F" alt="Python Badge">
+  <img src="https://img.shields.io/badge/Streamlit-black?logo=streamlit&logoSize=auto&labelColor=%23f7f7f7&color=%23FF4B4B&link=https%3A%2F%2Fstreamlit.io%2F" alt="Streamlit Badge">
+  <img src="https://img.shields.io/badge/LangChain-black?logo=langchain&logoColor=%231C3C3C&logoSize=auto&labelColor=%23f7f7f7&color=%231C3C3C&link=https%3A%2F%2Fwww.langchain.com%2F" alt="LangChain Badge">
+  <img src="https://img.shields.io/badge/MIT-black?logoColor=%23f55036&logoSize=auto&label=license&labelColor=grey&color=%20%233da639&link=https%3A%2F%2Fopensource.org%2Flicense%2FMIT" alt="MIT Badge">
+  </p>
 </div>
 
 ## 🔗 Project Deployment
